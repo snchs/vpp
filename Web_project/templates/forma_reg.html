@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="..\static\css\forma_reg.css">
+</head>
+<body>
+  <a href="index.html" class="strelka"><img src="..\static\img\strelkaNazad.png" height="30px" title="Вернуться"></a>
+  <!-- Форма регистрации -->
+  <form class="form" action="lk.php" method="post">
+    <h1 class="form__title">Регистрация</h1>
+
+    <div class="form__group">
+      <input class="form__input" placeholder=" "> 
+      <label class="form__label">Login</label>
+    </div>
+
+    <div class="form__group">
+      <input class="form__input" type="password" placeholder=" "> 
+      <label class="form__label">Password</label>
+    </div>
+
+    <!-- <div class="form__group_status">
+      <p class="p_form__group_status">Status</p>
+      <input type="checkbox" name="potr_chk">
+      <p class="btn_form__group_status">Потребитель</p>
+      <input type="checkbox" name="sotr_chk">
+      <p class="btn_form__group_status">Сотрудник</p>
+    </div> -->
+
+    <div class="form__group_status">
+      <p class="p_form__group_status">Тип аккаунта</p>
+      
+
+      <select class="listbox" name="type_acc" size="1">
+        <option value="Сотрудник">Сотрудник</option>
+        <option value="Потребитель">Потребитель</option>
+      </select>
+      
+    </div>
+
+    <div class="block_buttons">
+      <button type="submit" class="form__button1" name="submitbtn" value="subm">Зарегистрироваться</button>
+    </div>
+    
+  </form>
+
+  
+</body>
+</html>
